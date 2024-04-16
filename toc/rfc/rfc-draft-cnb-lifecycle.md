@@ -109,7 +109,7 @@ Both changes (CLI and manifest) were chosen because they are simple (from a user
 
 #### Service Bindings
 
-Cloud Native Buildpacks that need to access service binding data like credentials should be adapted to read from `VCAP_SERVICES` as well. For buildpacks based on Paketo's buildpack authoring Go library `libpak`, this is already the case via [libcnb#228](https://github.com/buildpacks/libcnb/pull/228). For buildpacks based on Paketo's other buildpack authoring Go library 'packit', this should be feasible as well.
+Cloud Native Buildpacks that need to access service binding data like credentials should be adapted to read from `VCAP_SERVICES` as well. For buildpacks based on Paketo's buildpack authoring Go library `libpak`, this is already the case via [libcnb#228](https://github.com/buildpacks/libcnb/pull/228). For buildpacks based on Paketo's other buildpack authoring Go library 'packit', there is an [open pull request](https://github.com/paketo-buildpacks/packit/pull/566) to support the same.
 
 When #804 gets approved and implemented (with option 2), this requirement will be removed.
 
