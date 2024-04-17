@@ -109,9 +109,12 @@ Both changes (CLI and manifest) were chosen because they are simple (from a user
 
 #### Service Bindings
 
-Cloud Native Buildpacks that need to access service binding data like credentials should be adapted to read from `VCAP_SERVICES` as well. For buildpacks based on Paketo's buildpack authoring Go library `libpak`, this is already the case via [libcnb#228](https://github.com/buildpacks/libcnb/pull/228). For buildpacks based on Paketo's other buildpack authoring Go library 'packit', there is an [open pull request](https://github.com/paketo-buildpacks/packit/pull/566) to support the same.
+The topic of supporting service bindings has been brought up in the earlier RFC (see [rfc-0017-add-cnbs.md#service-bindings](https://github.com/cloudfoundry/community/blob/main/toc/rfc/rfc-0017-add-cnbs.md#service-bindings)).
+The [recomendation](https://github.com/cloudfoundry/community/blob/main/toc/rfc/rfc-0017-add-cnbs.md#recommendation) then was to consider the options during implementation and we propose to stick to that recommendation.
 
-When #804 gets approved and implemented (with option 2), this requirement will be removed.
+There have been two changes since [rfc-0017-add-cnbs.md#service-bindings](https://github.com/cloudfoundry/community/blob/main/toc/rfc/rfc-0017-add-cnbs.md#service-bindings) has been merged 
+- there is an [open pull request](https://github.com/paketo-buildpacks/packit/pull/566) to add the same support as with [libcnb#228](https://github.com/buildpacks/libcnb/pull/228) to all Paketo buildpacks.
+- there is a separate RFC proposed (#804) that will potebtially solve the problem in Cloudfoundry.
 
 ### Alternative APIs
 
