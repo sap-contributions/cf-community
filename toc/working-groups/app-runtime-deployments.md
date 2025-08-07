@@ -48,6 +48,8 @@ areas:
   reviewers:
   - github: oliver-heinrich
     name: Oliver Heinrich
+  - github: hamideh-amini-khezrabad
+    name: Hamideh Amini Khezrabad  
   approvers:
   - github: davewalter
     name: Dave Walter
